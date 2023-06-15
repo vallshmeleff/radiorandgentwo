@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TableRow
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp">
+            <EditText
+                android:id="@+id/NumInStream"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Looking for a number in the stream"
+                android:textSize="30sp">
+            </EditText>
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:id="@+id/SourceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SourceText\n\n"
+                android:textSize="30sp">
+            </EditText>
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:id="@+id/VernamCodePage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vernam Code Page\n\n"
+                android:textSize="30sp">
+            </EditText>
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:id="@+id/EncodedText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Encoded Text\n\n"
+                android:textSize="30sp">
+            </EditText>
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:id="@+id/DecodedText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Decoded Text\n\n"
+                android:textSize="30sp">
+            </EditText>
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>
