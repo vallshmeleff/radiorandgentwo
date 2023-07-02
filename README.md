@@ -3,4 +3,5 @@ This application, based on the radiorandgen project, extracts a block of random 
 If you choose the length of the byte array to search so that there are 1-2 values per day, add an SMS sending block, you will get a super secure messenger.<br>
 /There is a "bug" in the application's Java code that is used when searching for a given combination of numbers in a stream. This "bug" makes the application possible./<br>
 Application under development<br>
-*** A separate interesting project is the transformation of digital streams into "analogue" digital streams. When on several "sides" we are synchronous in time (but without a synchronization channel) we get identical "analogue" curves. ECC Forte??? github.com/vallshmeleff/radiorandgenthree
+*** A separate interesting project is the transformation of digital streams into "analogue" digital streams. When on several "sides" we are synchronous in time (but without a synchronization channel) we get identical "analogue" curves. ECC Forte??? github.com/vallshmeleff/radiorandgenthree<br>
+WORKING App
