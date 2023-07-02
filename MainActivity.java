@@ -33,15 +33,6 @@ import java.util.List;
 
 //---------------------------------------------------
 //
-// Читаем данные - поток интернет-радио в буфер. Конвертируем буфер (массив байтов) в строку и выводим в Log
-// Используем Интернет-радио поток для получения ключа шифрования (и декодирования) для алгоритма Вернама.
-// Получаем поток цифровых данных любого интернет-радио одновременно в двух пунктах - отправителя данных (для шифрования) и получателя зашифрованных данных.
-// Поток данных записываем в буфер. Ищем в буфере заранее заданную последовательность чисел, которая известна отправителю и получателю.
-// После того, как заданная последовательность найдена, из буфера читается N следу.щих чисел. Где N= количеству символов сообщения для шифрования
-// Т.к. заданная для ожидания последовательность может попасть на границу буфера (поместиться в буфер не полностью), будем накапливать данные буфера в переменной большего размера (3-5) размеров буфера. Повторно искать последовательность в переменной, сдвигать данные на размер буфера, добавлять новый буфер и искать снова.
-// В отличие от несимметричного шифрования (RSA, ECC) при такой технологии получения ключей у отправителя и получателя информации нет факта обмена открытыми ключами и шифрование выполняется быстрее.
-// Есть много возможностей для усовершенствования такой технологии
-//
 // RadioSTREAM Application
 // We use an Internet radio stream to obtain the encryption (and decoding) key for the Vernam algorithm.
 // We receive the digital data stream of any Internet radio at the same time at two points - the sender of the data (for encryption) and the recipient of the encrypted data.
@@ -52,7 +43,6 @@ import java.util.List;
 // Unlike asymmetric encryption (RSA, ECC), with this key derivation technology, the sender and recipient of information do not exchange public keys and encryption is faster.
 // There are many opportunities to improve this technology.
 //
-// Приложение нашло 168 совпадений за 1 час (пишет сообщение об этом в LOG)
 //
 // Read the Internet radio stream into the buffer and look for an array byte[] efind in the buffer
 // The more bytes you specify to search, the longer you have to wait for a match. In this example - approximately 1-2 matches in 5 minutes
