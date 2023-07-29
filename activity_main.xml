@@ -54,7 +54,25 @@
                 android:id="@+id/DecodedText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Decoded Text\n\n"
+                android:text="Decoded Text from SMS\n\n"
+                android:textSize="30sp">
+            </EditText>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/btnExit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onButtonExit"
+                android:text="EXIT">
+            </Button>
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:id="@+id/Content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
                 android:textSize="30sp">
             </EditText>
         </TableRow>
