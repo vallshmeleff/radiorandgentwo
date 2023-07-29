@@ -368,7 +368,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void dial() { // Send SMS
 
-        String numberText = "89299626501"; // Sending to ourselves
+        String numberText = "56569626507"; // Phone number. Sending to ourselves
         String messageText = codedtexthex; // SMS Text - encoded source text
         //// smstrigger = 1; // For Debug not send SMS
         if (smstrigger == 0) {
